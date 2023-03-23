@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Button, ButtonsBox } from './FeedbackBtnsStyled';
-export const OptionsBtn = ({ handleClick, options }) => {
+export const FeedbackBtns= ({ handleClick, options }) => {
   return (
     <ButtonsBox>
       {options.map(option => (
@@ -13,7 +13,7 @@ export const OptionsBtn = ({ handleClick, options }) => {
   );
 };
 
-OptionsBtn.propTypes = {
+FeedbackBtns.propTypes = {
   handleClick: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };
